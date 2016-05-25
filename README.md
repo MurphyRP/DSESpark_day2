@@ -16,7 +16,7 @@ google the equivalents and keep the versions matched.
 // Install Zookeeper
 
 ```
-sudo apt­get install zookeeperd
+sudo apt-get install zookeeperd
 ```
 
 // Test Zookeeper
@@ -68,29 +68,29 @@ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee ­a
 /etc/apt/sources.list.d/sbt.list
 ```
 ```
-sudo apt­key adv ­­keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+sudo apt-key adv ­­keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
 ```
 
 ```
-sudo apt­get update
+sudo apt-get update
 ```
 ```
-sudo apt­get install sbt
+sudo apt-get install sbt
 ```
 //Install scala 2.10.6
 ```
-sudo apt­get remove scala­library scala
+sudo apt-get remove scala­library scala
 
 wget http://www.scala­lang.org/files/archive/scala­2.10.6.deb
 
 sudo dpkg ­i scala­2.10.6.deb
 
-sudo apt­get update
+sudo apt-get update
 
-sudo apt­get install scala
+sudo apt-get install scala
 ```
 //Install git
 
 ```
-sudo apt­get install git
+sudo apt-get install git
 ```
