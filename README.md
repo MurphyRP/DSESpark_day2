@@ -53,7 +53,7 @@ delete.topic.enable = true
 ```
 // Start Kafka
 ```
-nohup ~/kafka/bin/kafka­server­start.sh
+nohup ~/kafka/bin/kafka-server-start.sh
 ```
 
 ```
@@ -79,11 +79,11 @@ sudo apt-get install sbt
 ```
 //Install scala 2.10.6
 ```
-sudo apt-get remove scala­library scala
+sudo apt-get remove scala-library scala
 
-wget http://www.scala­lang.org/files/archive/scala­2.10.6.deb
+wget http://www.scala-lang.org/files/archive/scala-2.10.6.deb
 
-sudo dpkg ­i scala­2.10.6.deb
+sudo dpkg -i scala-2.10.6.deb
 
 sudo apt-get update
 
