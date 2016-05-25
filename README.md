@@ -28,7 +28,7 @@ telnet localhost 2181 //Type ruok in telnet, should say imok
 // Download Kafka 0.9.0.1 for Scala 2.10
 
 ```
-wget "http://mirror.cc.columbia.edu/pub/software/apache/kafka/0.9.0.1/kafka_2.10­0.9.0.1.tgz" ­O kafka.tgz
+"http://mirror.reverse.net/pub/apache/kafka/0.9.0.1/kafka_2.10-0.9.0.1.tgz" -O kafka.tgz
 ```
 
 
