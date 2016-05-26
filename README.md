@@ -29,7 +29,7 @@ http://<master ip>:7080
 ```
 sudo <installdir>/bin/dse spark-sql
 ```
-
+6) Query
 
 
 ## Spark Streaming
