@@ -53,11 +53,8 @@ delete.topic.enable = true
 ```
 // Start Kafka
 ```
-nohup ~/kafka/bin/kafka-server-start.sh
-```
+nohup ~/kafka/bin/kafka-server-start.sh ~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
 
-```
-~/kafka/config/server.properties > ~/kafka/kafka.log 2>&1 &
 ```
 
 // Install newest SBT
@@ -68,7 +65,7 @@ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee ­a
 /etc/apt/sources.list.d/sbt.list
 ```
 ```
-sudo apt-key adv ­­keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
 ```
 
 ```
