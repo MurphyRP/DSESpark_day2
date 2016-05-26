@@ -184,3 +184,7 @@ Complete the TODO section of the consumer in the following project. Instructions
 readme.
 
 https://github.com/cgilm/BootCampSparkStreamingP2
+
+Reference Project
+
+https://github.com/cgilm/BootCampSparkStreaming
