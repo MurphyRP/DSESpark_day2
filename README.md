@@ -4,9 +4,11 @@
 
 1) Create three 'sensor' tables. These tables have the same columns but slightly different primary key structures.
 
-https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
+
 
 2) Insert data into 'sensor_a'
+
+https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
 
 
