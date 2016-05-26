@@ -29,7 +29,7 @@ and
 ```
   included_categories: QUERY
 ```
-### Spark
+### Logging Executors in Spark
 
 4) Review/Change Executor logging options. On each node, edit each logback-spark-executor.xml file
 In the \<configuration\> section, add
@@ -41,29 +41,32 @@ To
 <installDir>/resources/spark/conf/logback-spark-executor.xml
 ```
 
-4) Open the Spark Master UI
+5) Open the Spark Master UI
 ```
 http://<master ip>:7080
 ```
 
-5) Using our 'write to Cassandra approach from day 1, populate sensor_b and sensor_c
+6) Using our 'write to Cassandra approach from day 1, populate sensor_b and sensor_c
 
-6) Using the Spark UI, Navigate to the Executor page and review the stdout
+7) Using the Spark UI, Navigate to the Executor page and review the stdout
   A) What is logged?
   B) What is happening with each request to C*?
   
-7) Review the audting log on each node for DSE.
+8) Review the audting log on each node for DSE.
 ```
 /var/log/cassandra/audit/audit.log
 ```
   A) What CQL is logged?
   B) What if any predicates are being pushed down? (where clause)
 
-6) Open Spark-sql UI
+### Ready for some QA? 
+
+
+9) Open Spark-sql UI
 ```
 sudo <installdir>/bin/dse spark-sql
 ```
-7) Query by non-key columns, partition key columns and combinations of columns.
+10) Query by non-key columns, partition key columns and combinations of columns.
 
   A) What is in the log?
   B) What query is being run ON the node?
