@@ -20,7 +20,15 @@ To
 ```
 <installDir>/resources/spark/conf/logback-spark-executor.xml
 ```
+4) Open the Spark Master UI
+```
+http://<master ip>:7080
+```
 
+5) Open the Spark-SQL UI
+```
+sudo <installdir>/bin/dse spark-sql
+```
 
 
 
