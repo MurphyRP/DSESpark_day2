@@ -12,7 +12,7 @@ https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
 ### Auditing DSE
 
-3) On each node, edit each dse.yaml file 
+3) On one node, edit the dse.yaml file 
 
 Edit auditing section
 dse.yaml
