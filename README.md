@@ -10,6 +10,18 @@ https://github.com/MurphyRP/DSESpark_day2/blob/master/createSensorTables.cql
 
 https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
+3) On each node, add '<logger name=”com.datastax.driver.core.RequestHandler” level=”TRACE”/>' to each logback-spark-executor.xml file 
+
+In the <configuration> section, add
+```
+<logger name=”com.datastax.driver.core.RequestHandler” level=”TRACE”/>
+```
+To
+```
+<installDir>/resources/spark/conf/logback-spark-executor.xml
+```
+
+
 
 
 ## Spark Streaming
