@@ -33,11 +33,18 @@ and
 http://<master ip>:7080
 ```
 
-5) Open the Spark-SQL UI
+5) Using our 'write to Cassandra approach from day 1, populate sensor_b and sensor_c
+
+6) Open Spark-sql UI
 ```
 sudo <installdir>/bin/dse spark-sql
 ```
-6) Query
+7) Query by non-key columns, partition key columns and combinations of columns.
+
+  A) What is in the log?
+  B) What query is being run ON the node?
+  C) Why?
+
 
 
 ## Spark Streaming
