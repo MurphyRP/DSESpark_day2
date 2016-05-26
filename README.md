@@ -168,3 +168,19 @@ sudo apt-get install scala
 ```
 sudo apt-get install git
 ```
+
+
+
+Complete the TODO section of the consumer in the following project. Instructions are in the 
+
+readme.
+
+https://github.com/cgilm/BootCampSparkStreamingP1
+
+Project #2
+
+Complete the TODO section of the consumer in the following project. Instructions are in the 
+
+readme.
+
+https://github.com/cgilm/BootCampSparkStreamingP2
