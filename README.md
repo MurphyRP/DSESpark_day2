@@ -48,29 +48,37 @@ http://<master ip>:7080
 
 6) Using our 'write to Cassandra approach from day 1, populate sensor_b and sensor_c
 
-7) Using the Spark UI, Navigate to the Executor page and review the stdout
-  A) What is logged?
-  B) What is happening with each request to C*?
+7) Using the Spark Master UI, Navigate to the Executor page and review the stdout
+
+    A) What is logged?
+    B) What is happening with each request to C*?
   
 8) Review the audting log on each node for DSE.
 ```
 /var/log/cassandra/audit/audit.log
 ```
-  A) What CQL is logged?
-  B) What if any predicates are being pushed down? (where clause)
+
+    A) What CQL is logged?
+    B) What if any predicates are being pushed down? (where clause)
+  
+9) Query by non-key columns, partition key columns and combinations of columns.
+
+    A) What is in the log?
+    B) What query is being run ON the node?
+    C) Why?
 
 ### Ready for some QA? 
 
 
-9) Open Spark-sql UI
+10) Open Spark-sql UI
 ```
 sudo <installdir>/bin/dse spark-sql
 ```
-10) Query by non-key columns, partition key columns and combinations of columns.
+11) Query by non-key columns, partition key columns and combinations of columns.
 
-  A) What is in the log?
-  B) What query is being run ON the node?
-  C) Why?
+    A) What is in the log?
+    B) What query is being run ON the node?
+    C) Why?
 
 
 
