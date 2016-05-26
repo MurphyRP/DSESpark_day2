@@ -10,6 +10,8 @@ https://github.com/MurphyRP/DSESpark_day2/blob/master/createSensorTables.cql
 
 https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
+### Auditing DSE
+
 3) On each node, edit each dse.yaml file 
 
 Edit auditing section
@@ -27,6 +29,17 @@ and
 ```
   included_categories: QUERY
 ```
+### Spark
+
+4) Review/Change Executor logging options. On each node, edit each logback-spark-executor.xml file
+In the \<configuration\> section, add
+```
+<logger name="com.datastax.driver.core.RequestHandler" level="TRACE"/>
+```
+To
+```
+<installDir>/resources/spark/conf/logback-spark-executor.xml
+```
 
 4) Open the Spark Master UI
 ```
@@ -34,6 +47,17 @@ http://<master ip>:7080
 ```
 
 5) Using our 'write to Cassandra approach from day 1, populate sensor_b and sensor_c
+
+6) Using the Spark UI, Navigate to the Executor page and review the stdout
+  A) What is logged?
+  B) What is happening with each request to C*?
+  
+7) Review the audting log on each node for DSE.
+```
+/var/log/cassandra/audit/audit.log
+```
+  A) What CQL is logged?
+  B) What if any predicates are being pushed down? (where clause)
 
 6) Open Spark-sql UI
 ```
