@@ -10,16 +10,24 @@ https://github.com/MurphyRP/DSESpark_day2/blob/master/createSensorTables.cql
 
 https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
-3) On each node, edit each logback-spark-executor.xml file 
+3) On each node, edit each dse.yaml file 
 
-In the \<configuration\> section, add
+Edit auditing section
+dse.yaml
 ```
-<logger name="com.datastax.driver.core.RequestHandler" level="TRACE"/>
+<installDir>/resources/dse/conf/dse.yaml
 ```
-To
+Enable auditing
 ```
-<installDir>/resources/spark/conf/logback-spark-executor.xml
+# Audit logging options
+audit_logging_options:
+  enabled: true
 ```
+and
+```
+  included_categories: QUERY
+```
+
 4) Open the Spark Master UI
 ```
 http://<master ip>:7080
