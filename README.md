@@ -14,7 +14,7 @@ https://github.com/MurphyRP/DSESpark_day2/blob/master/sensorData.cql
 
 In the \<configuration\> section, add
 ```
-<logger name=”com.datastax.driver.core.RequestHandler” level=”TRACE”/>
+<logger name="com.datastax.driver.core.RequestHandler" level="TRACE"/>
 ```
 To
 ```
