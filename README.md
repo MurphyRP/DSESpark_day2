@@ -29,6 +29,9 @@ and
 ```
   included_categories: QUERY
 ```
+    1) What queries are being pused down to Cassandra (CQL)?
+    2) Do you know what the 'token' predicate is doing and why it is needed for C* and Spark?
+    
 ### Logging Executors in Spark
 
 4) Review/Change Executor logging options. On each node, edit each logback-spark-executor.xml file
@@ -40,7 +43,6 @@ To
 ```
 <installDir>/resources/spark/conf/logback-spark-executor.xml
 ```
-
 5) Open the Spark Master UI
 ```
 http://<master ip>:7080
